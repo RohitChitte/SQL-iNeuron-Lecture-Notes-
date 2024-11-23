@@ -18,7 +18,7 @@ where Gender = 'M' and  VacationHours>40
 order by VacationHours desc 
 
 
-/* here we may get some enteries with vacation hr more than 40 due to precedence */ 
+/* here we may get some enteries with vacation hr less than 40 due to precedence */ 
 select JobTitle,MaritalStatus, Gender,VacationHours from HumanResources.Employee
 where Gender = 'M' or Gender = 'F' and  VacationHours>40
 order by VacationHours desc 
